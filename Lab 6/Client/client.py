@@ -14,7 +14,7 @@ except socket.error as ex:
 Response = ClientSocket.recv(1024).decode()
 print(Response)
 
-while True:
+while true:
     print (' a) Logarithm \n b) Square Root \n c) Exponential Function \n e) End')
     choose = input('What do you want to do?\n ')
     
