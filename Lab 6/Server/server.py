@@ -10,7 +10,7 @@ nok_message = 'HTTP/1.0 404 NotFound\n\n'
 
 def process_start(s_sock,s_addr):
     s_sock.send(str.encode('Welcome to the Server\n'))
-    while True:
+    while true:
         data = str(s_sock.recv(2048).decode())
         choice,val = data.split('.')
         if choice == "1":
